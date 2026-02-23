@@ -89,6 +89,15 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           <p className="font-mono mt-1">admin / password123</p>
         </div>
       </div>
+
+      <div className="mt-6 text-center text-sm text-gray-600">
+        <p>Don't have an account? <a href="/register" className="text-primary-600 hover:text-primary-800 font-semibold">Sign Up</a></p>
+      </div>
+
+      <div className="mt-6 text-center text-sm text-gray-600">
+        <p>Demo Credentials:</p>
+        <p className="font-mono mt-1">admin / password123</p>
+      </div>
     </div>
   )
 }

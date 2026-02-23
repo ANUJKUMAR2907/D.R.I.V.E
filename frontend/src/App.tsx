@@ -4,6 +4,7 @@ import './App.css'
 
 // Pages
 import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 import Dashboard from './pages/Dashboard'
 import EventsPage from './pages/EventsPage'
 import EmergencyPage from './pages/EmergencyPage'
@@ -27,7 +28,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginPage onLogin={() => setIsAuthenticated(true)} />} />
-        
+        <Route path="/register" element={<RegisterPage onLogin={() => setIsAuthenticated(true)} />} />
+
         <Route
           path="/"
           element={
@@ -40,7 +42,7 @@ function App() {
             )
           }
         />
-        
+
         <Route
           path="/events"
           element={
@@ -53,7 +55,7 @@ function App() {
             )
           }
         />
-        
+
         <Route
           path="/emergency"
           element={
@@ -66,7 +68,7 @@ function App() {
             )
           }
         />
-        
+
         <Route
           path="/decisions"
           element={
@@ -79,7 +81,7 @@ function App() {
             )
           }
         />
-        
+
         <Route
           path="/simulations"
           element={
@@ -92,7 +94,7 @@ function App() {
             )
           }
         />
-        
+
         <Route
           path="/cameras"
           element={

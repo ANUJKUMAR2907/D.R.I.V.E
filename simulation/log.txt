@@ -1,0 +1,40 @@
+Loading net-file from 'network/realistic/city.net.xml' ... done (1010ms).
+Loading additional-files from 'network/realistic/vtypes.add.xml' ... done (7ms).
+Warning: At actuated tlLogic 'cluster_10016225612_10016225616_11434604019_13451926992_#4more', linkIndex 1 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10016346056_10016346057_11283488131_11283488139_#10more', linkIndex 4,5 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10075533183_10123614600_10123614608_10123614610_#10more', actuated phase 3 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10075533183_10123614600_10123614608_10123614610_#10more', linkIndex 5,6 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10075533187_10075533188_10075533189_10075533190_#8more', actuated phase 4 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10075533187_10075533188_10075533189_10075533190_#8more', actuated phase 6 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10075533187_10075533188_10075533189_10075533190_#8more', linkIndex 0,1,2,3,4,5,6,7,11,12,13,14,15,16,17,18,19,20,21 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10075533192_10075533193_10684915913_10684915914_#11more', linkIndex 0,1,10,11,13,14,15 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10076140416_10123663817_10123663932_11432437451_#14more', actuated phase 0 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10076140416_10123663817_10123663932_11432437451_#14more', actuated phase 2 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10076140416_10123663817_10123663932_11432437451_#14more', actuated phase 6 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10076140416_10123663817_10123663932_11432437451_#14more', linkIndex 0,1,2,3,5,6,19,20,21,22,23,27 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10121033906_10121033916_10121050217_10121050219_#5more', linkIndex 3,4 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10123938477_12452734629_12452734630_12452734634_#9more', actuated phase 2 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_10123938477_12452734629_12452734630_12452734634_#9more', linkIndex 1,2,3,8,9 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11283487998_11286429140_11286429145_11854316017_#9more', linkIndex 7,8 has no controlling detector.
+Loading route-files incrementally from 'network/realistic/routes.rou.xml'
+Loading done.
+Simulation version 1.26.0 started with time: 0.00.
+Simulation ended at time: 100.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 0.97s
+ Real time factor: 103.093
+ UPS: 12520.618557
+Vehicles:
+ Inserted: 247 (Loaded: 503)
+ Running: 237
+ Waiting: 1
+Statistics (avg of 10):
+ RouteLength: 481.44
+ Speed: 10.10
+ Duration: 48.50
+ WaitingTime: 3.10
+ TimeLoss: 18.75
+ DepartDelay: 0.64
+DijkstraRouter answered 182 queries and explored 623.80 edges on average.
+DijkstraRouter spent 0.16s answering queries (0.86ms on average).

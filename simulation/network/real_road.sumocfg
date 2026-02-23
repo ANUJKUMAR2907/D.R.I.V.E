@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="real_road.net.xml"/>
+        <route-files value="real_road.rou.xml,project_area.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+</configuration>

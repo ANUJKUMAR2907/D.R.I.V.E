@@ -1,0 +1,17 @@
+<routes>
+    <!-- Vehicle type -->
+    <vType id="projectCar" accel="2.6" decel="4.5"
+           maxSpeed="13.9" length="5" color="0,1,1"/>
+
+    <!-- Route inside Project Area (Brigade Road Segment) -->
+    <route id="projectRoute"
+           edges="27946046#5 27946046#6 27946046#7"/>
+
+    <!-- VEHICLE COUNT CONTROL -->
+    <flow id="projectFlow"
+          type="projectCar"
+          route="projectRoute"
+          begin="0"
+          end="3600"
+          number="50"/>
+</routes>

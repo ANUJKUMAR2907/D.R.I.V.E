@@ -26,7 +26,7 @@
     <flow id="trucks_v2" type="truck" route="route_v2" begin="0" end="3600" vehsPerHour="40"/>
     
     <!-- Emergency vehicles (ambulances) -->
-    <vehicle id="AMB001" type="ambulance" route="route_h2" depart="300"/>
+    <vehicle id="AMB001" type="ambulance" route="route_h2" depart="20"/>
     <vehicle id="AMB002" type="ambulance" route="route_v2" depart="600"/>
     <vehicle id="AMB003" type="ambulance" route="route_h1" depart="1200"/>
     <vehicle id="AMB004" type="ambulance" route="route_v1" depart="1800"/>

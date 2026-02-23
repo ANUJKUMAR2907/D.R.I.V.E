@@ -65,7 +65,8 @@
     
     <!-- Default view settings -->
     <delay value="50"/>
-    <viewport zoom="200" x="1000" y="1000" angle="0"/>
+    <!-- Viewport centered on Bangalore map (calculated from convBoundary) -->
+    <viewport zoom="200" x="1591" y="1256" angle="0"/>
     <decals>
         <!-- Enable decals for realistic road markings -->
     </decals>

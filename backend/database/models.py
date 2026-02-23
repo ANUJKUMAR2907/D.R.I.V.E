@@ -1,6 +1,14 @@
-from sqlalchemy import Column, String, Integer, Float, Boolean, DateTime, JSON, ARRAY, Text
-from sqlalchemy.dialects.postgresql import UUID
-from geoalchemy2 import Geography
+from sqlalchemy import Column, String, Integer, Float, Boolean, DateTime, JSON, Text
+# Mock Geography for SQLite
+class Geography(String):
+    def __init__(self, *args, **kwargs):
+        super().__init__()
+# Mock ARRAY for SQLite (use JSON)
+ARRAY = JSON
+# Mock UUID for SQLite
+class UUID(String):
+    def __init__(self, as_uuid=False, **kwargs):
+        super().__init__(36, **kwargs)
 from datetime import datetime
 import uuid
 

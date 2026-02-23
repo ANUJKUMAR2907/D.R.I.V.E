@@ -105,7 +105,7 @@ def create_vehicle_types():
 <additional>
     <!-- Regular Cars -->
     <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="50" 
-           color="1,1,0" guiShape="passenger" imgFile=""/>
+           color="1,1,0" guiShape="passenger"/>
     <vType id="car_blue" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="50" 
            color="0,0,1" guiShape="passenger"/>
     <vType id="car_red" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="50" 
@@ -155,6 +155,18 @@ def create_vehicle_types():
     <!-- Pedestrians -->
     <vType id="pedestrian" vClass="pedestrian" guiShape="pedestrian" width="0.5" length="0.3" 
            minGap="0.25" maxSpeed="1.5" color="0.9,0.7,0.5"/>
+    <vType id="pedestrian" vClass="pedestrian" guiShape="pedestrian" width="0.5" length="0.3" 
+           minGap="0.25" maxSpeed="1.5" color="0.9,0.7,0.5"/>
+
+    <!-- Mixed Traffic Distribution -->
+    <vTypeDistribution id="mixed_traffic">
+        <vType id="mixed_car" probability="0.50" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="50" color="1,1,0" guiShape="passenger"/>
+        <vType id="mixed_motorcycle" probability="0.20" accel="4.0" decel="6.0" sigma="0.3" length="2.2" width="0.8" maxSpeed="60" color="0.9,0.1,0.1" guiShape="motorcycle"/>
+        <vType id="mixed_auto" probability="0.10" accel="2.0" decel="4.0" sigma="0.6" length="2.7" width="1.4" maxSpeed="25" color="0,0.8,0" guiShape="passenger/hatchback"/>
+        <vType id="mixed_bus" probability="0.05" accel="1.2" decel="4.0" sigma="0.5" length="12.0" width="2.55" maxSpeed="25" color="0.1,0.5,0.1" guiShape="bus"/>
+        <vType id="mixed_truck" probability="0.10" accel="1.3" decel="4.0" sigma="0.5" length="12.0" width="2.5" maxSpeed="30" color="0.5,0.5,0.5" guiShape="truck"/>
+        <vType id="mixed_suv" probability="0.05" accel="2.4" decel="4.0" sigma="0.5" length="5.0" width="2.1" maxSpeed="45" color="0.3,0.3,0.3" guiShape="passenger/sedan"/>
+    </vTypeDistribution>
 </additional>
 '''
     
@@ -307,7 +319,6 @@ def create_sumo_config(net_file, route_file, vtypes_file, gui_file):
         <net-file value="city.net.xml"/>
         <route-files value="routes.rou.xml"/>
         <additional-files value="vtypes.add.xml"/>
-        <gui-settings-file value="gui-settings.xml"/>
     </input>
     
     <time>
