@@ -1,5 +1,6 @@
 fastapi
 uvicorn[standard]
+openai>=1.0.0
 sqlalchemy
 asyncpg
 psycopg2-binary

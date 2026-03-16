@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-from api.routes import cameras, traffic_lights, sign_boards, events, emergency, users, decisions, overrides, simulations, dashboard, weather
+from api.routes import cameras, traffic_lights, sign_boards, events, emergency, users, decisions, overrides, simulations, dashboard, weather, chat
 from database.connection import init_db, close_db
 from services.websocket_manager import manager
 
@@ -48,6 +48,7 @@ app.include_router(overrides.router, prefix="/api/v1/overrides", tags=["Manual O
 app.include_router(simulations.router, prefix="/api/v1/simulations", tags=["Simulations"])
 app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["Dashboard"])
 app.include_router(weather.router, prefix="/api/v1/weather", tags=["Weather"])
+app.include_router(chat.router, prefix="/api/v1/chat", tags=["AI Chat"])
 
 @app.get("/")
 async def root():
